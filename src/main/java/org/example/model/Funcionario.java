@@ -6,9 +6,9 @@ import java.util.Objects;
 public class Funcionario {
     private String nome;
     private Double salario;
-    private String cargo;
+    private Integer cargo;
 
-    public Funcionario(String nome, Double salario, String cargo) {
+    public Funcionario(String nome, Double salario, Integer cargo) {
         this.nome = nome;
         this.salario = salario;
         this.cargo = cargo;
@@ -38,16 +38,12 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public String getCargo() {
+    public Integer getCargo() {
         return cargo;
     }
 
-    public void setCargo(String cargo) {
+    public void setCargo(Integer cargo) {
         this.cargo = cargo;
-    }
-
-    public Double mediaSalario(Double somaSalario, Integer qtdFuncionarios){
-        return somaSalario / qtdFuncionarios;
     }
 
     @Override
